@@ -1,10 +1,12 @@
+import { getImage } from "../../helper/getImage";
 
 
 const BlogCard = ({item})=>{
+    let imgLink = getImage(`../../../public/imges/${item.image}`)
     return(
         <div className=" bg-gray-50 shadow-md">
         <div>
-            <img className="h-56 w-full object-cover" src={item.image} alt="asd" />
+            <img className="h-56 w-full object-cover" src={imgLink} alt="asd" />
         </div>
         <div className="p-3 space-y-3">
         <div className="flex items-center justify-between py-2 ">

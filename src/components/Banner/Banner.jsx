@@ -1,4 +1,4 @@
-import BannerImg from '../../assets/imges/travelbox.png'
+import BannerImg from '../../../public/imges/travelbox.png'
 import { MdFlight } from "react-icons/md";
 import { FaWifi } from "react-icons/fa6";
 import { MdOutlineHotel } from "react-icons/md";
@@ -7,14 +7,14 @@ const Banner = ()=>{
     return(
         <div className="mt-10 bg-gray-200 rounded-sm shadow-md">
             <div className="grid grid-cols-1 sm:grid-cols-2">
-                <div className='mx-auto'>
+                <div className='mx-auto ' data-aos="flip-up">
                     <img src={BannerImg} alt="asd" />
                 </div>
                 <div className='flex flex-col items-center justify-center'>
-                    <h2 className='text-3xl sm:text-4xl font-bold'>
+                    <h2 className='text-3xl sm:text-4xl font-bold'  data-aos="fade-up">
                     Explore all corners of the world with us</h2>
-                    <p  className="text-sm text-gray-500 tracking-wide leading-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis doloremque in mollitia dicta deleniti molestiae itaque nostrum</p>
-                    <div className='grid grid-cols-2  gap-6'>
+                    <p  data-aos="fade-up" className="text-sm text-gray-500 tracking-wide leading-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis doloremque in mollitia dicta deleniti molestiae itaque nostrum</p>
+                    <div className='grid grid-cols-2  gap-6' data-aos="zoom-in">
                         <div className='space-y-6'>
 
                             <div className='flex items-center gap-4'>

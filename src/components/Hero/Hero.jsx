@@ -8,11 +8,12 @@ const Hero = ()=>{
         <div className="absolute bg-black/20 h-full top-0 right-0 w-full flex items-center justify-center">
             <div className=" bg-primary/10">
             <div className="my-2">
-                <p className="text-white">Our packages</p>
-                <h1 className="text-white font-bold text-4xl">Search Your Destination</h1>
+                <p data-aos="fade-up" className="text-white">Our packages</p>
+                <h1 data-aos="fade-up"
+              data-aos-delay="300" className="text-white font-bold text-4xl">Search Your Destination</h1>
             </div>
-            <div className=" py-5 bg-white px-5   gap-4 grid grid-cols-1 sm:grid-cols-3  rounded-md shadow-sm relative">
-                <div className="space-y-2">
+            <div className=" py-5 bg-white px-5   gap-4 grid grid-cols-1 sm:grid-cols-3  rounded-md shadow-sm relative" data-aos="fade-up" data-aos-delay="400">
+                <div className="space-y-2"  >
 
                     <label  className="opacity-70 block" htmlFor="">Searh your Destination</label>
                     <input type="text" placeholder="dubai " className="w-full !placeholder-slate-400 bg-gray-100 my-2 rounded-full focus:outline-primary focus:outline outline-1 p-2"/>

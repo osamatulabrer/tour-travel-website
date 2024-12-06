@@ -1,6 +1,8 @@
 
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './assets/pages/Layout.jsx'
@@ -12,6 +14,7 @@ import PlaceRoutes from './assets/pages/PlaceRoutes.jsx'
 import BlogsDetails from './assets/pages/BlogsDetails.jsx'
 
 
+
 const router = createBrowserRouter( [
   {
     path:'/',
@@ -21,6 +24,7 @@ const router = createBrowserRouter( [
     [{
       path:'/',
       element:<Home/>,
+      
     },
     {
       path:'/About',
@@ -33,6 +37,8 @@ const router = createBrowserRouter( [
     {
       path:'/PlaceRoutes',
       element:<PlaceRoutes/>
+   
+
     },
     {
       path:'/BlogsDetails',

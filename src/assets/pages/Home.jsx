@@ -2,19 +2,66 @@
 import BannerPic from '../../components/Banner/BannerPic';
 import Hero from '../../components/Hero/Hero';
 import Places from '../../components/Places/Places';
-import bannerVid from '../video/main.mp4'
-import bannerImg from '../imges/cover-women.jpg'
+import bannerVid from '../../../public/video/main.mp4'
+import bannerImg from '../../../public/imges/cover-women.jpg'
 import BlogComp from '../../components/Blogs/BlogsComp';
 import Banner from '../../components/Banner/Banner';
-import bannerImg2 from '../../assets/imges/travel-cover2.jpg'
+import bannerImg2 from '../../../public/imges/travel-cover2.jpg'
 import Tastimonial from '../../components/Testimonial/Testimonial';
+import { useEffect, useState } from 'react';
+
 
 
 
 
 
 const Home = ()=>{
+const [placesData,setPlacesData] = useState([])
+const [blogsData,setBlogsData] = useState([])
+const [testimonialData,setTestimonialData] = useState([])
 
+useEffect(()=>{
+   try{
+    async function getData() {
+        const conn = await fetch('http://localhost:4000/BlogsData')
+        const data = await conn.json()
+        setBlogsData(data)
+        
+    }
+    getData()
+   }catch(error){
+    console.log(error);
+    
+   }
+},[])
+useEffect(()=>{
+   try{
+    async function getData() {
+        const conn = await fetch('http://localhost:4000/testimonialData')
+        const data = await conn.json()
+        setTestimonialData(data)
+        
+    }
+    getData()
+   }catch(error){
+    console.log(error);
+    
+   }
+},[])
+useEffect(()=>{
+   try{
+    async function getData() {
+        const conn = await fetch('http://localhost:4000/PlacesData')
+        const data = await conn.json()
+        setPlacesData(data)
+        
+    }
+    getData()
+   }catch(error){
+    console.log(error);
+    
+   }
+},[])
     
     return(
         <div>
@@ -25,12 +72,12 @@ const Home = ()=>{
                     </video>
                     <Hero/>
                 </div>
-                    <Places/>
+                    <Places placesData={placesData}/>
                     <BannerPic bannerImg={bannerImg}/>
-                    <BlogComp/>
+                    <BlogComp blogsData={blogsData}/>
                     <Banner/>
                     <BannerPic bannerImg={bannerImg2}/>
-                    <Tastimonial/>
+                    <Tastimonial testimonialData={testimonialData}/>
             </div>
         </div>
     )

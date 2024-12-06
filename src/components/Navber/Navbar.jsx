@@ -1,4 +1,4 @@
-import logo from '../../assets/imges/logo.png'
+import logo from '../../../public/imges/logo.png'
 import { NavLink, Link } from "react-router-dom";
 import { MdArrowDropDown } from "react-icons/md";
 import { HiMenuAlt3 } from "react-icons/hi";

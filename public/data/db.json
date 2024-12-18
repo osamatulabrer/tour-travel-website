@@ -3,7 +3,7 @@
   "PlacesData": [
     {
       "id": 1,
-      "img": "Img1",
+      "img": "imges/boat.jpg",
       "title": "Boat",
       "location": "USA",
       "description": "lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -12,7 +12,7 @@
     },
     {
       "id": 2,
-      "img": "Img2",
+      "img": "imges/tajmahal.jpg",
       "title": "Taj Mahal",
       "location": "India",
       "description": "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
@@ -21,7 +21,7 @@
     },
     {
       "id": 3,
-      "img": "Img3",
+      "img": "imges/water.jpg",
       "title": "Underwater",
       "location": "US",
       "description": "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
@@ -30,7 +30,7 @@
     },
     {
       "id": 4,
-      "img": "Img4",
+      "img": "imges/place4.jpg",
       "title": "Sydney",
       "location": "USA",
       "description": "lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -39,7 +39,7 @@
     },
     {
       "id": 5,
-      "img": "Img5",
+      "img": "imges/place5.jpg",
       "title": "Los Angeles",
       "location": "United states",
       "description": "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
@@ -48,7 +48,7 @@
     },
     {
       "id": 6,
-      "img": "Img6",
+      "img": "imges/place6.jpg",
       "title": "Los Vegas",
       "location": "California",
       "description": "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the river Yamuna in the Indian city of Agra.",
@@ -59,7 +59,7 @@
   "BlogsData": [
     {
       "id": 1,
-      "image": "Img1",
+      "image": "imges/tajmahal.jpg",
       "title": "Top places to visit in India",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. At eligendi blanditiis veniam suscipit, consequatur assumenda recusandae nostrum reiciendis eaque inventore...",
       "author": "Someone",
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "image": "Img2",
+      "image": "imges/water.jpg",
       "title": "Top places to visit in US",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. At eligendi blanditiis veniam suscipit, consequatur assumenda recusandae nostrum reiciendis eaque inventore...",
       "author": "Someone",
@@ -75,7 +75,7 @@
     },
     {
       "id": 3,
-      "image": "Img3",
+      "image": "imges/boat.jpg",
       "title": "Top places to visit in Japan",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. At eligendi blanditiis veniam suscipit, consequatur assumenda recusandae nostrum reiciendis eaque inventore...",
       "author": "Someone",

@@ -2,11 +2,10 @@ import { MdLocationPin } from "react-icons/md";
 import { getImage } from "../../helper/getImage";
 
 const PlacesCard = ({item})=>{
-    let imgLink = getImage('../../../public/imges/${item.image}')
     return(
         <div className=" bg-gray-50 shadow-md">
             <div className="overflow-hidden">
-                <img  className="h-56 w-full object-cover hover:scale-125 hover:skew-x-2" src={imgLink} alt="asd" />
+                <img  className="mx-auto h-[220px] w-full object-cover transition duration-700 hover:skew-x-2 hover:scale-110" src={item.img} alt={item.name} />
             </div>
             <div className="p-3 space-y-3">
                 <h2>{item.title}</h2>

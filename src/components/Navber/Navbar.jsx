@@ -2,14 +2,23 @@ import logo from '../../../public/imges/logo.png'
 import { NavLink, Link } from "react-router-dom";
 import { MdArrowDropDown } from "react-icons/md";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { useState } from 'react';
+import OrderPopup from '../OrderPopup/OrderPopup';
+import ResponsiveMenu from './ResponsiveMenu';
 
 const Navber = ()=>{
+    const [show,setShow] = useState(false)
+    const [menuBar,setMenubar] = useState()
     const dropDownLink = [
         {id:1,link:'Our Services'},
         {id:2,link:'Top Brands'},
         {id:3,link:'Location'}
     ]
     return(
+        <>
+        {show && <OrderPopup onClose={()=> setShow(false)}/>}
+            {menuBar && <ResponsiveMenu />}
+        
         <nav className='shadow-lg'>
         <div className="sticky top-0 right-0 w-full " >
             <div className="bg-gradient-to-t from-primary to-secondary text-white">
@@ -56,11 +65,12 @@ const Navber = ()=>{
                     
             </div>
         <div className='gap-6  flex items-center'>
-            <button  className='text-white bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600  px-3 py-1 rounded-full'>book now</button>
-        <HiMenuAlt3 className='sm:hidden text-2xl'/>
+            <button onClick={()=> setShow(true)} className='text-white bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600  px-3 py-1 rounded-full'>book now</button>
+        <HiMenuAlt3 onClick={()=> setMenubar(!menuBar)} onClose={()=> setMenubar(false)} className='sm:hidden text-2xl'/>
         </div>
         </div>
         </nav>
+        </>
     )
 }
 export default Navber;
